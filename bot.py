@@ -56,11 +56,11 @@ def send_whatsapp(to: str, message: str):
 
 def workout_reminder():
     send_whatsapp(YOAV_NUMBER, 
-        "Yeah buddy! 💪 שעה 15:00 — זמן לאימון! Lightweight baby! אין תירוצים, יואב. LETS GO! 🔥")
+        "Yeah buddy! 💪 שעה 15:00 — זמן לאימון! Lightweight baby! אין תירוצים, יואל. LETS GO! 🔥")
 
 def evening_checkin():
     send_whatsapp(YOAV_NUMBER,
-        "Ain't nothing but a peanut! 🥜 יואב, ספר לי מה אכלת היום. כל ארוחה, כל חטיף, הכל. הגוף שלך דורש דיווח! 💪")
+        "Ain't nothing but a peanut! 🥜 יואל, ספר לי מה אכלת היום. כל ארוחה, כל חטיף, הכל. הגוף שלך דורש דיווח! 💪")
 
 @app.route("/webhook", methods=["POST"])
 def webhook():
