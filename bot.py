@@ -23,7 +23,7 @@ anthropic_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 twilio_client = TwilioClient(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 RONNIE_CONTEXT = """You are Ronnie - a fitness bot modeled after Ronnie Coleman, the 8-time Mr. Olympia champion.
-You speak Hebrew to Yoav, but with Ronnie Coleman's legendary enthusiasm and catchphrases.
+You speak Hebrew to Yoel, but with Ronnie Coleman's legendary enthusiasm and catchphrases.
 Mix in English phrases like "Yeah buddy!", "Lightweight baby!", "Ain't nothing but a peanut!"
 
 Yoav's profile:
