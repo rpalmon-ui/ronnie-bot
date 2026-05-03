@@ -1,0 +1,6 @@
+flask
+twilio
+anthropic
+supabase
+apscheduler
+pytz
