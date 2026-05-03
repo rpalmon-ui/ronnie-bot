@@ -106,7 +106,7 @@ def webhook():
 if __name__ == "__main__":
     israel_tz = pytz.timezone("Asia/Jerusalem")
     scheduler = BackgroundScheduler(timezone=israel_tz)
-    scheduler.add_job(workout_reminder, "cron", day_of_week="sun-thu", hour=15, minute=0)
-    scheduler.add_job(evening_checkin, "cron", day_of_week="sun-thu", hour=22, minute=0)
+    scheduler.add_job(workout_reminder, "cron", day_of_week="0,1,2,3,4", hour=15, minute=0)
+    scheduler.add_job(evening_checkin, "cron", day_of_week="0,1,2,3,4", hour=22, minute=0)
     scheduler.start()
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
